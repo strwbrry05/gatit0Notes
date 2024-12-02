@@ -111,10 +111,6 @@ body {
     flex-direction: column;
 }
 
-.linksContainer {
-    /* background-color: pink; */
-}
-
 .linksCard {
     background-color: var(--darkblue-color);
     border-radius: 15px;
@@ -143,9 +139,10 @@ body {
     color: var(--background-color);
     font-size: var(--aboveNormal-size);
     font-weight: var(--weight-bolder);
-    padding: 0.5em 3em;
+    padding: 0.5em 2em;
     border-radius: 10px;
     text-decoration: none;
+    width: 100%;
 }
 .generalLinks a:hover {
     background: var(--darkblue-color);
@@ -162,9 +159,11 @@ body {
     color: var(--background-color);
     font-size: var(--aboveNormal-size);
     font-weight: var(--weight-bolder);
-    padding: 0.5em 6.75em;
+    padding: 0.5em 5em;
     border-radius: 10px;
     text-decoration: none;
+    width: 100%;
+
 }
 .homeButtonLink a:hover {
     background: var(--darkblue-color);
