@@ -179,6 +179,34 @@ body {
         display: block;
     }
 
+    /*###################
+    CONTENT
+    ####################*/
+    .linksContainer {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    } 
+    .linksCard {
+        margin-bottom: 1em;
+        width: 230px;
+        height: 170px;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    .linksCard h1 {
+        font-size: var(--aboveNormal-size);
+    }
+    .linksList {
+        font-size: var(--normal-size);
+        list-style: none;
+    }
+    .generalLinks a {
+        font-size: var(--normal-size);
+    }
 
-
+    .homeButtonLink a {
+        padding: 0.5em 3em;
+        font-size: var(--normal-size);
+    }
 }
