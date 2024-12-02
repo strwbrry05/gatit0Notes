@@ -28,6 +28,7 @@
 /*###############
     INDEX PAGE
 ###############*/
+
 .container,
 button,
 form {
@@ -35,10 +36,18 @@ form {
     font-weight: var(--weight-normal);
 }
 
-.container {
-    margin-top: 5em;
-    margin-bottom: 3em;
+/* LAYOUT */
+body {
+    display: grid;
+    grid-template-rows: 0.75fr 2fr 0.75fr;
 }
+.spacing-top-div {
+    grid-row: 1/2;
+}
+.spacing-bottom-div {
+    grid-row: 3/4;
+}
+
 
 /*@@@@@@ WINDOW TOP @@@@@@@@*/
 
@@ -46,10 +55,15 @@ form {
 .windowBottom {
     background:var(--gray-color);
 
-    max-width: 80%;
+    max-width: 90%;
     height: 25px;
     margin: 0 auto;
 }
+
+.windowTop {
+    height: 30px;
+}
+
 
 .windowTop {
     display: flex;
@@ -71,11 +85,10 @@ form {
 
 /*@@@@@@ WINDOW MAIN @@@@@@@@*/
 
-.windowMain,
-.windowMainHome {
+.windowMain {
     background: var(--background-color);
 
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
     margin: 0 auto;
 
@@ -84,7 +97,6 @@ form {
 
 /* profile title */
 .login_profile {
-
     margin-bottom: 1em;
     margin-top: 1em;
 }
@@ -95,7 +107,7 @@ form {
 }
 
 .login_picture {
-    width: 95px;
+    width: 110px;
     border-radius: 50%;
     border: 4px solid var(--blue-color);
 
@@ -103,7 +115,6 @@ form {
 }
 
 /* Label + Forms + Enter Button*/
-
 .login_subtitle {
     font-style: italic;
     margin-bottom: 0.5em;
@@ -113,16 +124,16 @@ form {
 .login_form_user,
 .login_form_pass {
     text-align: center;
-    border: 1.5px solid black;
+    border: 1.75px solid black;
     margin-bottom: 0.5em;
     border-radius: 5px;
-    padding: 0.25em;
+    padding: 0.5em;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -130,17 +141,17 @@ form {
     font-size: var(--small-size);
     color: var(--red-color);
     margin-bottom: 1em;
+    margin-top: 0.75em;
 }
 
 .login_button {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     border: none;
     border-radius: 50px;
-    padding: 0.5em 0.5em;
+    padding: 0.75em 0.5em;
     background: var(--blue-color);
     color: #F5F5F5;
-
 }
 .login_button:hover {
     background: var(--darkblue-color);
@@ -163,71 +174,6 @@ form {
     text-decoration: none;
 }
 
-/*###############
-    HOME PAGE
-###############*/
-.homeLeftTop h1 {
-    font-size: var(--heading-size);
-    text-decoration: underline;
-}
-.homeLeftTop p {
-    color: var(--red-color);
-    font-size: var(--small-size);
-}
-.homeLeftTop {
-    margin-bottom: 1em;
-}
-
-
-.homeLeftMiddle img {
-    max-width: 100%;
-    border: 2px solid var(--blue-color);
-}
-.homeLeftMiddle img:hover {
-    border: 3px solid var(--darkgray-color);
-}
-
-
-.homeRight button {
-    background: var(--blue-color);
-    color: var(--background-color);
-    padding: 0.5em 2em;
-    border: 2px solid ;
-    border-radius: 10px;
-    margin-bottom: 1em;
-    width: 100%;
-}
-.homeRight button:hover {
-    background: var(--darkblue-color);
-    cursor: pointer;
-}
-
-
-/* Layout */
-.windowMainHome {
-    display: flex;
-    flex-direction: column;
-}
-.homeLeftMiddle {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.5em;
-    row-gap: 0.5em;
-
-    text-align: center;
-    margin-bottom: 1em;
-}
-.homeLeft {
-    text-align: left;
-}
-
-.homeRight {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1em;
-}
-
-
 
 /*###################
     MEDIA Q
@@ -237,38 +183,30 @@ form {
     .container {
         max-width: 900px;
         margin: 5em auto;
-        /* background: pink; */
+    }
+
+    body {
+        display: block;
     }
 
     /*LOGIN PAGE */
-
     .login_picture {
         width: 115px;
     }
 
-    /*HOME PAGE*/
-    .windowMainHome {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    .homeLeft {
-        margin-right: 1em;
-        width: 60%;
-    }
-    .homeRight {
-        margin-top: 2.15em;
+    .login_form_user,
+    .login_form_pass {
+    border: 1.5px solid black;
+    padding: 0.25em;
     }
 
+    form {
+        width: 55%;
+    }
 
-    .homeLeftMiddle img {
-        max-width: 100%;
-    }
-    .homeRight button {
-        padding: 1em 2.5em;
-    }
-    .homeLeftMiddle {
-        margin-bottom: 0;
+    .login_button {
+        width: 50%;
+        padding: 0.5em 0.5em;
     }
 
 }
