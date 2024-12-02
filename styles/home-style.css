@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #F5F5F5;
+    --blue-color: #6482AD;
+    --darkblue-color: #2C4E80;
+    --red-color: #B8001F;
+    --gray-color: #D8D9DA;
+    --darkgray-color: #686d76;
+    --white-color: #FFF;
+
+    --font-headers: "Protest Strike", sans-serif;
+    --font-normal: "Poppins", sans-serif;
+    --weight-normal: 500;
+    --weight-bolder: 600;
+
+    --title-size: 2.25rem;
+    --heading-size: 1.5rem;
+    --normal-size: 1rem;
+    --small-size: 0.75rem;
+    --smaller-size: 0.5rem;
+}
+
+.container {
+    font-family: var(--font-normal);
+    font-weight: var(--weight-normal);
+}
+
+/* LAYOUT */
+body {
+    display: grid;
+    grid-template-rows: 0.15fr 2fr 0.25fr;
+}
+.spacing-top-div {
+    grid-row: 1/2;
+}
+.spacing-bottom-div {
+    grid-row: 3/4;
+}
+
+/*@@@@@@ WINDOW TOP @@@@@@@@*/
+
+.windowTop,
+.windowBottom {
+    background:var(--gray-color);
+
+    max-width: 90%;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.windowTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    height: 30px;
+}
+
+.windowTop_text {
+    font-size: var(--small-size);
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    color: var(--darkgray-color);
+    cursor:default;
+}
+
+.windowTop_rightIcons {
+    display: flex;
+}
+
+/*@@@@@@ WINDOW MAIN @@@@@@@@*/
+
+.windowMainHome {
+    background: var(--background-color);
+
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+
+    padding: 1.25em;
+}
+
+/*@@@@@@ WINDOW BOTTOM @@@@@@@@*/
+.windowBottom {
+    display: flex;
+    justify-content: space-between;
+}
+.windowBottom_rightIcons {
+    margin-right: 0.75em;
+}
+.windowBottom_leftIcons {
+    margin-left: 0.75em;
+}
+.windowBottom a {
+    text-decoration: none;
+}
+
+/*###############
+    HOME PAGE
+###############*/
+.homeLeftTop h1 {
+    font-size: var(--heading-size);
+    text-decoration: underline;
+}
+.homeLeftTop p {
+    color: var(--red-color);
+    font-size: var(--small-size);
+}
+.homeLeftTop {
+    margin-bottom: 1em;
+}
+
+
+.homeLeftMiddle img {
+    max-width: 100%;
+    border: 2px solid var(--blue-color);
+}
+.homeLeftMiddle img:hover {
+    border: 3px solid var(--darkgray-color);
+}
+
+
+.homeRight button {
+    background: var(--blue-color);
+    color: var(--background-color);
+    font-size: var(--normal-size);
+    font-weight: var(--weight-bolder);
+    padding: 0.75em 2em;
+    border: 2px solid ;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    width: 100%;
+}
+.homeRight button:hover {
+    background: var(--darkblue-color);
+    cursor: pointer;
+}
+
+
+/* Layout */
+.windowMainHome {
+    display: flex;
+    flex-direction: column;
+}
+.homeLeftMiddle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5em;
+    row-gap: 0.5em;
+
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+.homeLeft {
+    text-align: left;
+}
+
+.homeRight {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+/*###################
+    MEDIA Q
+####################*/
+
+@media (min-width:600px) {
+    .container {
+        max-width: 900px;
+        margin: 5em auto;
+        /* background: pink; */
+    }
+
+    body {
+        display: block;
+    }
+
+    /*HOME PAGE*/
+    .windowMainHome {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .homeLeft {
+        margin-right: 1em;
+        width: 60%;
+    }
+    .homeRight {
+        justify-content: center;
+        margin-top: 4.25em;
+        margin-bottom: 0.5em;
+    }
+
+
+    .homeLeftMiddle img {
+        max-width: 100%;
+    }
+    .homeLeftMiddle {
+        margin-bottom: 0;
+    }
+    .homeRight button {
+        padding: 1em 2.5em;
+    }
+
+    .homeRight button {
+        background: var(--blue-color);
+        color: var(--background-color);
+        font-size: var(--normal-size);
+        font-weight: var(--weight-bolder);
+        padding: 0.75em 2em;
+        border: 2px solid ;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
+
+}

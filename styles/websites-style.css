@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #F5F5F5;
+    --blue-color: #6482AD;
+    --darkblue-color: #2C4E80;
+    --red-color: #B8001F;
+    --gray-color: #D8D9DA;
+    --darkgray-color: #686d76;
+    --white-color: #FFF;
+
+    --font-headers: "Protest Strike", sans-serif;
+    --font-normal: "Poppins", sans-serif;
+    --weight-normal: 500;
+    --weight-bolder: 600;
+
+    --title-size: 2.25rem;
+    --heading-size: 1.5rem;
+    --aboveNormal-size:1.25rem;
+    --normal-size: 1rem;
+    --small-size: 0.75rem;
+    --smaller-size: 0.5rem;
+}
+
+.container {
+    font-family: var(--font-normal);
+    font-weight: var(--weight-normal);
+}
+
+/*----------------*/
+
+/* LAYOUT */
+body {
+    display: grid;
+    grid-template-rows: 0.15fr 2fr 0.15fr;
+}
+.spacing-top-div {
+    grid-row: 1/2;
+}
+.spacing-bottom-div {
+    grid-row: 3/4;
+}
+
+/*@@@@@@ WINDOW TOP @@@@@@@@*/
+
+.windowTop,
+.windowBottom {
+    background:var(--gray-color);
+
+    max-width: 90%;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.windowTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    height: 30px;
+}
+
+.windowTop_text {
+    font-size: var(--small-size);
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    color: var(--darkgray-color);
+    cursor:default;
+}
+
+.windowTop_rightIcons {
+    display: flex;
+}
+
+/*@@@@@@ WINDOW MAIN @@@@@@@@*/
+
+.windowMainHome {
+    background: var(--background-color);
+
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+
+    padding: 1.25em;
+}
+
+/*@@@@@@ WINDOW BOTTOM @@@@@@@@*/
+.windowBottom {
+    display: flex;
+    justify-content: space-between;
+}
+.windowBottom_rightIcons {
+    margin-right: 0.75em;
+}
+.windowBottom_leftIcons {
+    margin-left: 0.75em;
+}
+.windowBottom a {
+    text-decoration: none;
+}
+
+/*###################
+    CONTENT
+####################*/
+.windowMainHome {
+    display: flex;
+    flex-direction: column;
+}
+
+.linksContainer {
+    /* background-color: pink; */
+}
+
+.linksCard {
+    background-color: var(--darkblue-color);
+    border-radius: 15px;
+    margin-bottom: 1em;
+    padding: 2em 0;
+
+    color: var(--background-color);
+}
+.linksList {
+    font-size: var(--aboveNormal-size);
+}
+.linksList a {
+    list-style-type: none;
+    color: var(--background-color)
+}
+.linksList a:hover {
+    color: var(--gray-color);
+}
+
+.generalLinks {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.generalLinks a {
+    background: var(--blue-color);
+    color: var(--background-color);
+    font-size: var(--aboveNormal-size);
+    font-weight: var(--weight-bolder);
+    padding: 0.5em 3em;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.generalLinks a:hover {
+    background: var(--darkblue-color);
+    cursor: pointer;
+}
+
+
+.homeButtonLink {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.homeButtonLink a {
+    background: var(--blue-color);
+    color: var(--background-color);
+    font-size: var(--aboveNormal-size);
+    font-weight: var(--weight-bolder);
+    padding: 0.5em 6.75em;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.homeButtonLink a:hover {
+    background: var(--darkblue-color);
+    cursor: pointer;
+}
+
+
+/*###################
+    MEDIA Q
+####################*/
+
+@media (min-width:600px) {
+    .container {
+        max-width: 900px;
+        margin: 5em auto;
+        /* background: pink; */
+    }
+
+    body {
+        display: block;
+    }
+
+
+
+}
