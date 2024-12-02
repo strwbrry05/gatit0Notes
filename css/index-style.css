@@ -39,7 +39,7 @@ form {
 /* LAYOUT */
 body {
     display: grid;
-    grid-template-rows: 0.75fr 2fr 0.75fr;
+    grid-template-rows: 0.25fr 2fr 0.75fr;
 }
 .spacing-top-div {
     grid-row: 1/2;
