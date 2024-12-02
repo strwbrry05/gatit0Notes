@@ -22,7 +22,6 @@
     --normal-size: 1rem;
     --small-size: 0.75rem;
     --smaller-size: 0.5rem;
-
 }
 
 /*###############
@@ -112,6 +111,9 @@ body {
     border: 4px solid var(--blue-color);
 
     justify-self: center;
+}
+.login_picture:hover {
+    cursor: pointer;
 }
 
 /* Label + Forms + Enter Button*/

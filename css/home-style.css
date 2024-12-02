@@ -16,13 +16,30 @@
     --font-headers: "Protest Strike", sans-serif;
     --font-normal: "Poppins", sans-serif;
     --weight-normal: 500;
+    --weight-bolder: 600;
 
     --title-size: 2.25rem;
     --heading-size: 1.5rem;
     --normal-size: 1rem;
     --small-size: 0.75rem;
     --smaller-size: 0.5rem;
+}
 
+.container {
+    font-family: var(--font-normal);
+    font-weight: var(--weight-normal);
+}
+
+/* LAYOUT */
+body {
+    display: grid;
+    grid-template-rows: 0.25fr 2fr 0.75fr;
+}
+.spacing-top-div {
+    grid-row: 1/2;
+}
+.spacing-bottom-div {
+    grid-row: 3/4;
 }
 
 /*@@@@@@ WINDOW TOP @@@@@@@@*/
@@ -31,7 +48,7 @@
 .windowBottom {
     background:var(--gray-color);
 
-    max-width: 80%;
+    max-width: 90%;
     height: 25px;
     margin: 0 auto;
 }
@@ -41,7 +58,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1em;
+    height: 30px;
 }
+
 .windowTop_text {
     font-size: var(--small-size);
     margin-left: 0.75em;
@@ -59,7 +78,7 @@
 .windowMainHome {
     background: var(--background-color);
 
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
     margin: 0 auto;
 
@@ -109,7 +128,9 @@
 .homeRight button {
     background: var(--blue-color);
     color: var(--background-color);
-    padding: 0.5em 2em;
+    font-size: var(--normal-size);
+    font-weight: var(--weight-bolder);
+    padding: 0.75em 2em;
     border: 2px solid ;
     border-radius: 10px;
     margin-bottom: 1em;
@@ -133,7 +154,7 @@
     row-gap: 0.5em;
 
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 .homeLeft {
     text-align: left;
@@ -156,6 +177,10 @@
         /* background: pink; */
     }
 
+    body {
+        display: block;
+    }
+
     /*HOME PAGE*/
     .windowMainHome {
         display: flex;
@@ -167,18 +192,33 @@
         width: 60%;
     }
     .homeRight {
-        margin-top: 2.15em;
+        justify-content: center;
+        margin-top: 4.25em;
+        margin-bottom: 0.5em;
     }
 
 
     .homeLeftMiddle img {
         max-width: 100%;
     }
-    .homeRight button {
-        padding: 1em 2.5em;
-    }
     .homeLeftMiddle {
         margin-bottom: 0;
     }
+    .homeRight button {
+        padding: 1em 2.5em;
+    }
+
+    .homeRight button {
+        background: var(--blue-color);
+        color: var(--background-color);
+        font-size: var(--normal-size);
+        font-weight: var(--weight-bolder);
+        padding: 0.75em 2em;
+        border: 2px solid ;
+        border-radius: 10px;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+
 
 }
