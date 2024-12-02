@@ -33,16 +33,9 @@
 
 /*----------------*/
 
-/* LAYOUT */
 body {
-    display: grid;
-    grid-template-rows: 0.15fr 2fr 0.15fr;
-}
-.spacing-top-div {
-    grid-row: 1/2;
-}
-.spacing-bottom-div {
-    grid-row: 3/4;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 /*@@@@@@ WINDOW TOP @@@@@@@@*/
