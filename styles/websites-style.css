@@ -190,12 +190,12 @@ body {
     .linksCard {
         margin-bottom: 1em;
         width: 230px;
-        height: 170px;
+        height: 160px;
         padding-bottom: 1em;
         padding-top: 1em;
     }
     .linksCard h1 {
-        font-size: var(--aboveNormal-size);
+        font-size: var(--normal-size);
     }
     .linksList {
         font-size: var(--normal-size);
