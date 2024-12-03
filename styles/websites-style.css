@@ -114,7 +114,7 @@ body {
 
     color: var(--background-color);
 }
-.linksList {
+.cardTitle {
     font-size: var(--aboveNormal-size);
 }
 .linksList a {
@@ -131,9 +131,9 @@ body {
     width: 100%;
 }
 .generalLinks a {
-    background: var(--blue-color);
+    background: var(--red-color);
     color: var(--background-color);
-    font-size: var(--aboveNormal-size);
+    font-size: var(--normal-size);
     font-weight: var(--weight-bolder);
     padding: 0.5em 2em;
     border-radius: 10px;
