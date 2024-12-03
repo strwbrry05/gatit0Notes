@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-color: #F5F5F5;
+    --blue-color: #6482AD;
+    --darkblue-color: #2C4E80;
+    --red-color: #B8001F;
+    --gray-color: #D8D9DA;
+    --darkgray-color: #686d76;
+    --white-color: #FFF;
+
+    --font-headers: "Protest Strike", sans-serif;
+    --font-normal: "Poppins", sans-serif;
+    --weight-normal: 500;
+    --weight-bolder: 600;
+
+    --title-size: 2.25rem;
+    --heading-size: 1.5rem;
+    --aboveNormal-size:1.25rem;
+    --normal-size: 1rem;
+    --small-size: 0.75rem;
+    --smaller-size: 0.5rem;
+}
+
+.container {
+    font-family: var(--font-normal);
+    font-weight: var(--weight-normal);
+}
+
+/* LAYOUT */
+body {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*@@@@@@ WINDOW TOP @@@@@@@@*/
+
+.windowTop,
+.windowBottom {
+    background:var(--gray-color);
+
+    max-width: 90%;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.windowTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    height: 30px;
+}
+
+.windowTop_text {
+    font-size: var(--small-size);
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    color: var(--darkgray-color);
+    cursor:default;
+}
+
+.windowTop_rightIcons {
+    display: flex;
+}
+
+/*@@@@@@ WINDOW MAIN @@@@@@@@*/
+
+.windowMainHome {
+    background: var(--background-color);
+
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+
+    padding: 1.25em;
+}
+
+/*@@@@@@ WINDOW BOTTOM @@@@@@@@*/
+.windowBottom {
+    display: flex;
+    justify-content: space-between;
+}
+.windowBottom_rightIcons {
+    margin-right: 0.75em;
+}
+.windowBottom_leftIcons {
+    margin-left: 0.75em;
+}
+.windowBottom a {
+    text-decoration: none;
+}
+
+/*###############
+    CONTENT
+###############*/
+.ytPlaylist {
+    display: flex;
+
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1em;
+
+    color: var(--darkgray-color);
+    background-color: var(--gray-color);
+}
+.ytPlaylist:hover {
+    background: var(--blue-color);
+}
+a {
+    text-decoration: none;
+}
+.playlistTitle {
+    text-decoration: underline;
+    font-weight: var(--weight-bolder);
+    font-size: var(--aboveNormal-size);
+}
+.playlistSub {
+    color: var(--darkgray-color);
+
+}
+.ytPlaylist img {
+    margin-right: 1em;
+    width: 100px;
+    height: 75px;
+    border-radius: 20px;
+    border: 2px solid var(--darkgray-color);
+}
+
+.rightDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ytchannel {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    color: var(--darkblue-color);
+}
+
+.ytchannel img {
+    border-radius: 50%;
+    width: 100px;
+    border: 3px solid var(--darkblue-color);
+}
+
+
+
+.homeButtonLink {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.homeButtonLink a {
+    background: var(--blue-color);
+    color: var(--background-color);
+    font-size: var(--aboveNormal-size);
+    font-weight: var(--weight-bolder);
+    padding: 0.5em 3em;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 100%;
+
+}
+.homeButtonLink a:hover {
+    background: var(--darkblue-color);
+    cursor: pointer;
+}
+
+
+/*###################
+    MEDIA Q
+####################*/
+
+@media (min-width:600px) {
+    .container {
+        max-width: 900px;
+        margin: 5em auto;
+        /* background: pink; */
+    }
+
+
+}
