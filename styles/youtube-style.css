@@ -128,8 +128,8 @@ a {
 }
 .ytPlaylist img {
     margin-right: 1em;
-    width: 100px;
-    height: 75px;
+    width: 120px;
+    height: 85px;
     border-radius: 20px;
     border: 2px solid var(--darkgray-color);
 }
@@ -149,7 +149,7 @@ a {
 
 .ytchannel img {
     border-radius: 50%;
-    width: 100px;
+    width: 85px;
     border: 3px solid var(--darkblue-color);
 }
 
