@@ -107,8 +107,10 @@ body {
 .linksCard {
     background-color: var(--darkblue-color);
     border-radius: 15px;
+    padding: 1em 0;
+    width: 85%;
+    margin: 0 auto;
     margin-bottom: 1em;
-    padding: 2em 0;
 
     color: var(--background-color);
 }
@@ -126,6 +128,7 @@ body {
 .generalLinks {
     margin-top: 1em;
     margin-bottom: 2em;
+    width: 100%;
 }
 .generalLinks a {
     background: var(--blue-color);
@@ -135,7 +138,6 @@ body {
     padding: 0.5em 2em;
     border-radius: 10px;
     text-decoration: none;
-    width: 100%;
 }
 .generalLinks a:hover {
     background: var(--darkblue-color);
@@ -144,18 +146,18 @@ body {
 
 
 .homeButtonLink {
-    margin-bottom: 1em;
-    margin-top: 1em;
+    margin: 1em auto;
+    width: 100%;
 }
 .homeButtonLink a {
     background: var(--blue-color);
     color: var(--background-color);
     font-size: var(--aboveNormal-size);
     font-weight: var(--weight-bolder);
-    padding: 0.5em 5em;
+    padding: 0.5em 4em;
     border-radius: 10px;
     text-decoration: none;
-    width: 100%;
+
 
 }
 .homeButtonLink a:hover {
