@@ -182,7 +182,7 @@ body {
         color: var(--darkblue-color);
         margin: 1em 0;
         font-weight: var(--weight-bolder);
-        font-size: var(--normal-size);
+        font-size: var(--small-size);
 
         width: 75%;
 
