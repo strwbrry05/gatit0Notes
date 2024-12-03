@@ -103,7 +103,7 @@ body {
     justify-content: left;
     align-items: center;
 
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 10px;
     margin-bottom: 1em;
 
@@ -120,17 +120,18 @@ a {
 .playlistTitle {
     text-decoration: underline;
     font-weight: var(--weight-bolder);
-    font-size: var(--aboveNormal-size);
+    font-size: var(--normal-size);
 }
 .playlistSub {
     color: var(--darkgray-color);
+    font-size: var(--small-size);
 
 }
 .ytPlaylist img {
     margin-right: 1em;
     width: 120px;
     height: 85px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 2px solid var(--darkgray-color);
 }
 
