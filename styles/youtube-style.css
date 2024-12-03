@@ -125,12 +125,15 @@ a {
 .playlistSub {
     color: var(--darkgray-color);
     font-size: var(--small-size);
+    width: 90%;
+    display: flex;
+    justify-content: center;
 
 }
 .ytPlaylist img {
     margin-right: 1em;
     width: 120px;
-    height: 85px;
+    height: 80px;
     border-radius: 15px;
     border: 2px solid var(--darkgray-color);
 }
