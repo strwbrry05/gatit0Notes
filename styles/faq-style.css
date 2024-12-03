@@ -158,6 +158,69 @@ body {
         /* background: pink; */
     }
 
+    .questionsGrid {
+        display: flex;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .windowMainHome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .aboutMeText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        color: var(--darkblue-color);
+        margin: 1em 0;
+        font-weight: var(--weight-bolder);
+        font-size: var(--normal-size);
+
+        width: 75%;
+
+    }
+    .boldText {
+        font-weight: var(--weight-bolder);
+        text-decoration: underline;
+    }
+
+    .qa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: var(--small-size);
+        width: 300px;
+        height: 200px;
+        margin: 1em;
+
+        box-shadow: 1px 10px 20px 2px var(--gray-color);
+        border-radius: 15px;
+        /* margin-bottom: 2em; */
+        padding: 1em;
+    }
+
+    .questionText {
+        color: var(--red-color);
+        margin-bottom: 0.75em;
+    }
+    .answerText {
+        color: var(--darkgray-color)
+    }
+
+    .homeButtonLink {
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
 
 
 }
